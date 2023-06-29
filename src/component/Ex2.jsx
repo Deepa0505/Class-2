@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 // state => internal varaible of react, number, string, boolean, object, array
 
-function Ex1(props) {
+const Ex2 = (props) => {
     // useState => react hook
     //const [state,handler] = useState(initial value)
     const [x,setx] = useState(123)
