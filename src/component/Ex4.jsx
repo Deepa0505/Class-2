@@ -21,7 +21,7 @@ class Ex4 extends React.Component {
     render() {
         return (
             <div>
-                <h3>States in class component</h3>
+                <h3>States in Class Component</h3>
                 <h3> x = { this.state.x } </h3>
                 <h3> y = { this.state.y } </h3>
                 <h3> { this.state.title } </h3>

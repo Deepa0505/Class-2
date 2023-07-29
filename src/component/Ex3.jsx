@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 const Ex3 = function (props) {
     // useState => react hook
     //const [state,handler] = useState(initial value)
-    const [x,setx] = useState(123)
+    const [x,setX] = useState(123)
     const [title,setTitle] = useState("welcome to react")
     const [view,setView] = useState(true)
 
@@ -19,14 +19,15 @@ const Ex3 = function (props) {
 
     return (
         <div>
-            <h3>States in Functional component</h3>
+            <h3>States in Functional Component</h3>
             <h4> var x = { x } </h4>
+            <h4> var title = { title } </h4>
             <hr/>
             <h4> { view ? "Say True": "Say False" } </h4>
 
             <hr />
 
-            <h4> { user.name } , { user.email } and { user.age } years</h4>
+            <h4> { user.name } , { user.email } and { user.age } years </h4>
 
             <hr />
 
@@ -43,4 +44,4 @@ const Ex3 = function (props) {
     )
 }
 
-export default Ex1
+export default Ex3

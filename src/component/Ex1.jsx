@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 // state => internal varaible of react, number, string, boolean, object, array
 
 function Ex1(props) {
     // useState => react hook
     //const [state,handler] = useState(initial value)
-    const [x,setx] = useState(123)
+    const [x,setX] = useState(123)
     const [title,setTitle] = useState("welcome to react")
     const [view,setView] = useState(true)
 
@@ -19,9 +19,10 @@ function Ex1(props) {
 
     return (
         <div>
-            <h3>States in Functional component</h3>
+            <h3>States in Functional Component</h3>
             <h4> var x = { x } </h4>
-            <hr/>
+            <h4> var title = { title } </h4>
+            <hr />
             <h4> { view ? "Say True": "Say False" } </h4>
 
             <hr />
@@ -34,7 +35,7 @@ function Ex1(props) {
                 {
                     colors.map((item,index) => {
                         return (
-                            <li key={index}> { item }</li>
+                            <li key={index}> { item } </li>
                         )
                     })
                 }
